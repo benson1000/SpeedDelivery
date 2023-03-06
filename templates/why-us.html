@@ -1,0 +1,94 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"
+</head>
+{% extends 'base.html' %}
+
+{% block title %}- Why us?{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+<section class="why-us" id="why-us">
+    <div class="why-container">
+        <div class="why-box">
+            
+            <img src="static\images\why-us delivery.jpg" alt="" class="image">
+        </div>
+
+        <div class="why-content">
+            <h2><span>Why Panasonic speed</span><br> is the best delivery courier?</h2>
+            <ul>
+                <li><h3>Economical Services</h3></li>
+                <p>Our company is a budget-priced service to enhance your work.</p>
+                <li><h3>Online Tracking</h3></li>
+                <p><p>With the customers portal, you as our customer can be able to track, order and report all your products.</p>
+                <li><h3>Same-Day Delivery</h3></li>
+                <p>We offer day-to-day delivery services to all our customers.</p>
+            </ul>
+            
+        </div>
+    
+    </div>
+
+    <div class="second-container">
+
+        <div class="second-box">
+
+            <h2><span>Our customers</span></h2>
+            <!-- <img src="\static\images\delivery_2.jpg" alt="" class="image"> -->
+            <img src="{{ url_for('static', filename='images/delivery_2.png') }}" alt="" class="image">
+            <p>At Panasonic speed, we understand that a courier service isn't just about product delivery.</p>
+            <br>
+
+        </div>
+
+        <div class="third-box">
+
+            <h3>All our Panasonic speed employees are required to:<br></h3>
+            <ul>
+                <li>Be fully insured and checked by the security</li>
+                <li>Display corporate identification card</li>
+                <li>Wear full corporate uniform</li>
+                <li>Be fully trained in parcel handling procedures</li>
+                <li>Drive a clean, fully sign-written vehicle</li>
+                <li>Carry a mobile phone</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="customer-container">
+
+        <div class="container-headings">
+            <img src="static\images\medical samples.jpg" alt="" class="image">
+        </div>
+        <div class="container-content">
+            <h2><span>Panasonic speed</span><br> understanding <span>about</span> courier service</h2>
+
+            <p>It's about collaborating with a transport provider who acts as an extension
+                of your own company. A partner who can help you save money, whose courier
+                delivery methods improve your customer experience, and whose capability will
+                give you a competitive advantage in an ever-tightening market.
+            </p>
+
+            <h3><span>No additional fees</span></h3>
+            <p>Account maintenance and other hidden fees can drive up your freight costs.</p>
+            <br>
+
+            <h3>Parcel coverage</h3>
+            <p>We include limited liability coverage at no extra cost.</p>
+
+            <br>
+            <h3>No redelivery fees</h3>
+            <p>These can really add up and are particularly important when delivering to residential customers.</p>
+
+            <br>
+            <h3>Simple, reliable and economical</h3>
+            <p>Save costs and focus on your business and customers with our affordable and convenient service.</p>
+        </div>
+
+    </div>
+
+</section>
+{% include 'footer.html' %}
+{% endblock body %}

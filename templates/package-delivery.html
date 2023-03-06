@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/packages.css')}}">
+</head>
+
+{% extends 'base.html' %}
+
+{% block title %} Package Delivery {% endblock title %}
+
+{% block body %}
+{% include 'header.html' %}
+
+<section>
+    <div class="container">
+        <h2>Package Delivery services</h2>
+        <img src={{ url_for('static', filename="images/parcel delivery.jpg") }} alt="" class="image">
+        <h6>Door To Door Package Delivery</h6>
+        <hr>
+        <p>Place your order for door-to-door delivery services online,<br>
+            and have your items picked up and delivered to your destination.
+        </p>
+    </div>
+</section>
+{% include 'footer.html' %}
+    
+{% endblock body %}
+

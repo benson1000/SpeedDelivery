@@ -1,0 +1,228 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/services.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/about.css')}}">
+
+<style>
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+
+</head>
+
+{% extends 'base.html' %}
+
+{% block title %}- services{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+
+
+<section class="services" id="services">
+    <div class="top-container">
+        <h3>We <span>deliver real results</span> and  products, offering reliability and<br/> honesty</h3>
+    </div>
+
+    <div class="wrap">
+      <button class="button" id="myBtn">Web Services Provided</button>
+    </div>
+
+    <div class='top-choice'>
+
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2> Services available </h2>
+                    <span class="close">&times;</span>
+                </div>
+
+                <div class="modal-body">
+                        <p><a href="{{ url_for('pharmaceuticals') }}">Pharmaceuticals</a></p>
+                        <p><a href="#">Package Delivery</a></p>
+                        <p><a href="{{ url_for('medical_supplies') }}">Medical Supplies</a></p>
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="about-container">
+        <div class="about-box">
+          <img class="medical-courier-images" src="static\images\medicine.jpg" alt="" class="image" style="margin-top: 70px;">
+        </div>
+        
+        <div class="about-content">
+
+            <h3><a href="{{ url_for('pharmaceuticals') }}"><span>Medical</span> Courier services</a></h3>
+            <p>The Panasonic speed Medical Courier division specializes in region-wide delivery of blood samples,
+                biomedical specimens, and same-day delivery of biological substances.
+                Our trained courier riders deliver directly to medical research and stem cell processing laboratories,
+                blood banks, and hospitals. We provide the highest level of security for all deliveries.
+                All of our medical couriers pass an extensive criminal background check, 
+                are fully trained in compliance with all health & safety directives. 
+            </p>
+            <br>
+            <h4 style="margin-left: 30px">Same-day Courier Services</h4>
+            <p>We take care of all your same-day delivery needs and make sure they arrive on time.
+                Our immediate pickup and door-to-door delivery for local shipments ensure that your
+                package will be delivered to its destination within the shortest time possible.</p>
+        </div>
+
+    </div>
+    
+        <div class="offer-container">
+            <div class="heading-box">
+                <h3 style="margin-top: -120px;"><a href="{{ url_for('medical_supplies') }}"><span>Delivery</span> services</a></h3>
+                <p>The Delivery of the package is carried with detailed precision
+                    and constant communication with the client. Door to Door delivery.
+                    We take care of all your same-day delivery needs and make sure they arrive on time.
+                    Our immediate pickup and door-to-door delivery for local shipments ensure that your package
+                    will be delivered to its destination within the shortest time possible.
+                </p>
+                <ul>
+                    <li>Scheduled Courier Services</li>
+                    <li>Express Courier Services</li>
+                    <li>Same-day Courier Services</li>
+                    <li>Overnight Courier Services</li>
+                </ul>
+            </div>
+            <div class="image-box">
+              <img class="images" src="static\images\groceries.jpg" alt="" class="image" style="margin-top: -40px;">
+            </div>
+            
+        </div>
+
+        <div class="about-container">
+          <div class="about-box">
+            <img class="medical-courier-images" src="static\images\original parcel.jpg" alt="" class="image">
+          </div>
+            
+            <div class="about-content">
+                <h3 style="margin-left: 20px;"><a href="#"><span>Parcel Collections</span></a></h3>
+                <p style="margin-left: 20px;">At Panasonic speed parcel Services, we ensure that we are in compliance with all 
+                    customer requirements. We liaise with customer service providers
+                    to ensure that you, as our customer, your products are delivered safely and in a timely manner.
+                    As the premier medical courier service, we follow all medical protocols that guarantee secure deliveries.
+                </p>
+                <div class="lists">
+                  <ul>
+                    <li>No Surprises in terms of No hidden charges or re-delivery fees.</li>
+                    <li>Transparent pricing for your customers with a guarantee of free returns.</li>
+                    <li>Routine scheduled deliveries with flexibility to get your medical goods delivered on time.</li><br>
+                    <li>Transparent pricing for your customers with a guarantee of free returns.</li>    
+                </ul>
+
+                </div>
+                
+            </div>
+        </div>
+ </section>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+            console.log("masha")
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    } 
+</script>
+
+ {% include 'footer.html' %}
+
+{% endblock body %}

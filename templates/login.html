@@ -1,0 +1,41 @@
+{% include 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<!--<h3 class="text-center" style="margin: 3%">Login</h3>-->
+
+{% from "includes/_formhelpers.html" import render_field %}
+<div class="d-flex justify-content-around" style="margin-top: 10%;">
+  <form method="POST" class="col-4 p-4 bg-dark text-light">
+    <h2 class="text-success" style="text-align:center;">Login</h2>
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+
+      <div class="form-group">
+          {{render_field(form.email, class_="form-control")}}
+      </div>
+
+      <div class="form-group">
+          {{render_field(form.password, class_="form-control")}}
+      </div>
+
+      <p><input type="submit" name="" class="btn btn-success" value="Submit"></p>
+
+    </fieldset>
+
+    <small class="text-muted ml-2">
+        <a href="{{ url_for('change') }}">Reset Password?</a>
+    </small>
+  </form>
+  </form>
+</div>
+      
+</div>
+<div class="border-top pt-3" style="margin: 3% 40%">
+  <small class="text-muted" style="font-size: 18px">
+      Need An Account? <a class="ml-2" href="{{ url_for('register') }}" style="color: blue, list-style: none">Sign Up Now</a>
+  </small>
+</div>
+
+{% endblock %}

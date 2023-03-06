@@ -1,0 +1,75 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/services.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"
+</head>
+{% extends 'base.html' %}
+
+{% block title %}   Pharmaceuticals Delivery services  {% endblock title %}
+
+{% block body %}
+{% include 'header.html' %}
+
+<section class="pharmaceuticals" id="pharmaceuticals">
+    <div class="box-container">
+        <div class="details">
+            <h3><span>Pharmaceuticals Deliveries</span> Highlights</h3>
+            <p>At Panasonic speed Services, we ensure that we are in compliance with all medical courier service
+                requirements. We liaise with health service providers to ensure that patient medical materials
+                are delivered safely and in a timely manner...<br>
+            </p>
+            <ul>
+                <li>Live orders tracking</li>
+                <li>Instant pick-up and delivery notifications</li>
+                <li>Access to live courier tracking at any time</li>
+                <li>Open 24/7/365</li>
+                <li>Custom delivery routes</li>
+                <li>Fastest turnaround times in the region</li>
+                <li>Access to live courier tracking at any time</li>
+            </ul>
+        </div>
+        <img src="\static\images\final.jpg" alt="" class="image">
+
+    </div>
+    
+    <div class="box-container">
+        <img src="\static\images\doctor.jpg" alt="" class="image">
+
+        <div class="details">
+           <h3><span>Healthcare Delivery</span> Solutions</h3>
+            <p>We offer best services in the following sectors:</p><br>
+            <h4>Medical Equipment</h4>
+            <p>We offer expert delivery of medical equipment and spare parts to GP surgeries,<br>
+                blood donation centers, care homes, hospitals & labs</p>
+    
+            <h4>Specimen Delivery</h4>
+            <p>Collection & transportation of patient specimen samples from GP surgeries,<br>
+                blood donation centers, care homes, hospitals & laboratories..</p>
+    
+            <h4>Pharmacy Delivery</h4>
+            <p>Cost-effective solutions for collection and delivery of online & community pharmacies.<br>
+                We maintain the highest levels of security for your deliveries..</p>
+    
+            <h4>Clinical Trials</h4>
+            <p>We deliver clinical trial materials and medicines to your nominated doctors and then gather<br>
+                patient samples for the duration of the analysis with your laboratory..</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="details">
+            <h2>What do we offer?</h2>
+            <br>
+            <h4>LIVE PARCEL AND ORDER TRACKING</h4>
+            <p>Track your order online at any time and receive instant pick-up notifications and proof of delivery.</p>
+            <br>
+            <h4>24/7/365</h4>
+            <p>We are open 24/7/365 days a year to assist you at any time and with last minute requests.</p>
+            <br>
+            <h4>FASTEST TURNAROUND</h4>
+            <p>We offer the industry's fastest retrieval turnaround times and provide you with instant delivery notifications.</p>
+        </div>
+        <img src="\static\images\delivery parcels.jpg" alt="" class="image">
+    </div>
+
+</section>
+{% include 'footer.html' %}  
+{% endblock body %}

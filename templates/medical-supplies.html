@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/services.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+{% block title %}- Medical Equipments Supplies {% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+
+<section class="supplies" id="supplies">
+    <div class="box-container">
+        <img src="\static\images\medical supplies.jpg" alt="" class="image">
+        <div class="details">
+            <h3 style="padding:40px;">Medical Equipments supply</h3>
+            <p style="padding-left:40px;">We provide the highest level of security for all shipments. As the premier medical <br>
+                 courier service, we follow all medical protocols that guarantee secure deliveries. <br>
+                 We are fully trained in compliance with all health & safety directives.<br>
+                <br>
+                 some of the medical courier goods include: <br>
+                </p>
+            <ul style="padding-left:40px;">
+                <li>Blood</li>
+                <li>Medicine</li>
+                <li>Specimen</li>
+                <li>Pharmaceuticals</li>
+                <li>X-rays</li>
+                <li>Medical Equipments</li>
+                <li>Medical Supplies</li>
+                <li>Lab results</li>
+                <li>Medical and patients records</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="box-container">
+        <div class="details">
+            <h2 style="font-size: 20px;color: green;">PRODUCT DETAILS</h2>
+            <p>We specialise in delivering bespoke solutions tailored to your <br>
+            Medical and Laboratory needs.We offer a wide variety of emerging diagnostic <br>
+            and surgical equipment and supplies to aid in earlier diagnosis and prevention of disease.</p>
+            <br>
+    
+            <p>Our equipment specialists can provide the advice and guidance required to take advantage<br>
+                of technologies that will keep your business competitive and more productive.</p>
+        </div>
+
+        <div class="details">
+            <h2 style="font-size: 20px;color: green;">AREAS OF USE</h2>
+            <ol>
+                <li>Hospitals</li>
+                <li>Healthcare & Medical centres</li>
+                <li>Clinics</li>
+                <li>Dental facilities</li>
+                <li>Research facilities</li>
+                <li>Referral hospitals</li>
+                <li>Laboratory</li>
+                <li>Healthcare training institutions</li>
+                <li>Medical schools</li>
+            </ol>
+
+        </div>
+    </div>
+
+</section>
+{% include 'footer.html' %}
+    
+{% endblock body %}

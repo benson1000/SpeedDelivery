@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    margin: 50px;
+}
+
+.about-container {
+    position: relative;
+    display: flex;
+}
+
+.about-container>.about-box>img {
+    background-color: "#EFEFEF";
+    position: relative;
+    left: 0;
+    margin-top: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+    box-shadow: 0 0 8px 8px #EFEFEF inset;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.about-container>.about-content {
+    color: "#232735";
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.about-container>.about-content>h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    line-height: 180%;
+}
+
+.about-container>.about-content>h2>span {
+    color: blue;
+}
+
+.about-container>.about-content>p {
+    color: black;
+    line-height: 280%;
+    margin-top: 30px;
+    font-size: 1.0rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.why-container {
+    position: relative;
+    display: flex;
+}
+
+.why-container>.why-box {
+    background-color: "#EFEFEF";
+    position: relative;
+    left: 0;
+    margin-top: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+    box-shadow: 0 0 8px 8px #EFEFEF inset;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.why-container>.why-content {
+    color: "#232735";
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.why-container>.why-content>h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.why-container>.why-content>h2>span {
+    color: blue;
+}
+
+.container>.first-box h2 {
+    font-size: 2.5rem;
+    color: black;
+    line-height: 43px;
+}
+
+.container>.first-box h2 span {
+    color: blue;
+}
+
+.why-container>.why-content>p {
+    color: black;
+    line-height: 180%;
+    margin-top: 30px;
+    font-size: 1.0rem;
+    margin-left: 60px;
+}
+
+.why-container>.why-content>ul {
+    list-style: outside none;
+    list-style-type: "✔";
+}
+
+.why-container>.why-content>ul>li::marker {
+    color: green;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.why-container>.why-content>ul>li {
+    font-size: 1.0rem;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.container>.first-box>img {
+    background-color: "#EFEFEF";
+    position: relative;
+    left: 0;
+    margin: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+    box-shadow: 0 0 8px 8px #EFEFEF inset;
+}
+
+.container>.box-content {
+    color: "#232735";
+    margin: 30px;
+    padding: 30px;
+}
+
+.container>.box-content>h2 {
+    color: black;
+    font-size: 2.2rem;
+}
+
+.container>.box-content>h2>span {
+    color: blue;
+}
+
+.container>.box-content>p {
+    color: black;
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 1.0rem;
+}
+
+.container>.box-content>ul {
+    list-style: outside none;
+    list-style-type: "✔";
+}
+
+.container>.box-content>ul>li::marker {
+    color: green;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.container>.box-content>ul>li {
+    font-size: 1.0rem;
+    padding: 10px;
+}
+
+.container>.box-content>ul>li>h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.container>.box-content>ul>p {
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.container>.second-box {
+    left: 20%;
+}
+
+h2 {
+    color: hotpink;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+}
+
+.second-container>.second-box {
+    margin-top: -100px;
+}
+
+.second-container>.second-box>img {
+    background-color: "#EFEFEF";
+    object-fit: contain;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.second-container>.second-box>h2 {
+    background-color: "#EFEFEF";
+    margin: 20px;
+    color: #130f40;
+}
+
+.second-container>.third-box {
+    margin-top: -10px;
+}
+
+.second-container>.third-box>h3 {
+    font-size: 1.3rem;
+    width: 80%;
+    background-clip: text;
+    color: black;
+    line-height: 120%;
+}
+
+.second-container>.second-box>h2 {
+    margin-top: 50px;
+    font-size: 1.9em;
+}
+
+.second-container>.second-box>p {
+    margin: 10px;
+}
+
+.second-container>.third-box>ul {
+    list-style: outside none;
+    list-style-type: "✔";
+}
+
+.second-container>.third-box>ul>li::marker {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.second-container>.third-box>ul>li {
+    font-size: 1.0rem;
+    padding: 10px;
+}
+
+.second-container>.second-box>p {
+    position: relative;
+    width: 60%;
+    margin-left: 20px;
+    font-size: 0.8em;
+    padding: 20px;
+    color: "#CD05CD";
+    text-shadow: 0 0 0.15em #232735;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    white-space: nowrap;
+    filter: blur(0.007em);
+}
+
+.speed-container {
+    display: flex;
+    flex: 2;
+    position: relative;
+    margin: 50px;
+}
+
+.customer-container {
+    display: flex;
+    flex: 2;
+    position: relative;
+    margin: 50px;
+}
+
+.customer-container>.container-headings>img {
+    background-color: #EFEFEF;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.customer-container>.container-content>h2 {
+    color: #130f40;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    font-size: 2.0rem;
+}
+
+.customer-container>.container-content>h2>span {
+    color: blue;
+}
+
+.customer-container>.container-content>p {
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    word-spacing: 3px;
+    margin-left: 40px;
+    font-size: 1.0rem;
+}
+
+.customer-container>.container-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    max-width: 75vw;
+    background-clip: text;
+    color: black;
+    margin-left: 40px;
+    font-weight: 500px;
+}
+
+.speed-container>.container-headings>h2 {
+    color: #130f40;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    font-size: 2.0rem;
+    text-align: right;
+    float: right;
+    display: inline;
+}
+
+.speed-container>.container-headings>img {
+    background-color: #EFEFEF;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.speed-container>.container-headings>h2>span {
+    color: blue;
+}
+
+.speed-container>.container-headings>.container {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: justify;
+    transition: all 0.3s;
+}
+
+.speed-container>.container-content>p {
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    word-spacing: 3px;
+    margin-left: 40px;
+    font-size: 1.0rem;
+}
+
+.speed-container>.container-headings>.container>p:first-child::first-letter {
+    color: red;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+
+.container-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    max-width: 75vw;
+    background-clip: text;
+    color: black;
+    margin-left: 40px;
+    font-weight: 500px;
+}
+
+.new-box {
+    margin-top: 20px;
+}
+
+.second-container>.new-box>h2 {
+    color: #130f40;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 2.0rem;
+}
+
+.second-container>.new-box>h2>span {
+    color: blue;
+}
+
+.new-box>ul {
+    list-style: outside none;
+    list-style-type: "✔";
+}
+
+.new-box>ul>li::marker {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.new-box>ul>li {
+    font-size: 1.0rem;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.new-box>p {
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    word-spacing: 3px;
+    margin-left: 40px;
+    font-size: 1.0rem;
+    margin-top: 10px;
+}
+
+.second-container>.another-box>img {
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.offer-container {
+    display: flex;
+    flex: 2;
+    position: relative;
+    margin: 50px;
+}
+
+.offer-container>.image-box>img {
+    background-color: #EFEFEF;
+    margin-left: 50px;
+    margin-top: 60px;
+    width: 85%;
+}
+
+.heading-box {
+    margin-top: 50px;
+}
+
+.offer-container>.heading-box>h2 {
+    color: #130f40;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 2.0rem;
+}
+
+.offer-container>.heading-box>h2>span {
+    color: blue;
+}
+
+.heading-box>ul {
+    list-style: outside none;
+    list-style-type: "✔";
+}
+
+.heading-box>ul>li::marker {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.heading-box>ul>li {
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 40px;
+}

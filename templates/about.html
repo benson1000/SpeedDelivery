@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"
+</head>
+{% extends 'base.html' %}
+
+{% block title %}- about{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+<section class="about" id="about">
+    <div class="about-container">
+
+        <div class="about-box">
+            <img src="\static\images\work.jpg" alt="" class="image"> 
+        </div>
+
+        <div class="about-content">
+            <h2>Let the <span>facts speak</span> for you</h2>
+            <p>Panasonic speed logistics goal is to Deliver your supplies in a timely, honesty form thus enhancing fulfillment services that are professional and reliable.</p>
+        </div>
+    </div>
+
+    <div class="second-container">
+        <div class="another-box">
+            <img src="\static\images\courier-services.jpg" alt="" class="image">
+            
+        </div>
+        <div class="new-box">
+            <h2>Our <span>Delivery services are unique</span> and we use a customer-centric approach.</h2>
+            <ul>
+                <li>We are Reliable and Cost-effective.</li>
+                <li>We use the latest industry technologies for reliable delivery services.</li>
+                <li>We offer online parcel tracking and trace facilities for all clients.</li>
+            </ul>
+            <p>We have expertise and professional approach to providing you as our
+                cutomer,the best delivery services in missouri makes Panasonic speed
+                logistics company,the only courier services choice for your business needs.
+            </p>
+        </div>
+
+    </div>
+    
+
+    <div class="offer-container">
+        <div class="image-box">
+            <img src="\static\images\about_offers.jpg" alt="" class="image">
+        </div>
+        
+        <div class="heading-box">
+            <h2>What <span>does</span> Panasonic speed </span>offer</span> you?</h2>
+        <ul>
+            <li>We have a professional, qualified and well-trained team.</li>
+            <li>We have the best customer ratings due to our services.</li>
+            <li>We are the best delivery service providers in Missouri.</li>
+        </ul>
+
+        </div>
+        
+    </div>
+
+
+</section>
+{% include 'footer.html' %}  
+{% endblock body %}
+

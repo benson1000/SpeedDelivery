@@ -1,0 +1,100 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"
+</head>
+
+{% extends 'base.html' %}
+
+{% block title %}- Home{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+<section class="home" id="home">
+
+    <div class="slideshow-container">
+        <div class="railItem fade">
+            <div class="railDetails">
+                <h2>On Demand </h2>
+                <h2>Medical Delivery services...</h2>
+                <br />
+                <p>We offer effective and safe Pharmaceutical courier services to healthcare service providers all over Missouri.</p>
+            </div>
+    
+            <img src="static\images\medical.jpg" alt="" class="image">
+        </div>
+    
+        <div class="railItem fade">
+            <div class="railDetails">
+                <h2>Express </h2>
+                <h2>Delivery services...</h2>
+                <br />
+                <p>We have trained manpower and expertise to deliver reliable, cost-effective and secure delivery solutions.</p>
+ 
+            </div>
+    
+            <img src="static\images\grocery.jpg" alt="" class="image">
+        </div>
+    
+        <div class="railItem fade">
+            <div class="railDetails">
+                <h2>Get fulfilled...</h2>
+                <br />
+                <p>our delivery solutions provide same-day, scheduled and overnight delivery services across Missouri. </p>
+            </div>
+    
+            <img src="static\images\customer.jpg" alt="" class="image">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <script src="static\js\panasonic.js"></script>
+
+    </div>
+
+    <div class="container">
+
+        <div class="box-content">
+            <h3><span>Package</span> Delivery</h3>
+
+            <p>We have in-house professional and trained riders to handle our small package delivery orders
+                within St Louis and it’s environs. We also offer large consignments transit using our mini-vans and 
+                different tonnes trucks. Using our wide network with fellow countrywide parcel courier providers.
+                Our intensely trained errand boys will ensure your parcel is packaged, addressed & posted
+                to the desired location. This way, we ensure your countrywide parcels are dispatched and received successfully.
+            </p>
+        </div>
+
+        <div class="first-box">
+            <img src="static\images\package delivery new.jpg" alt="" class="image"> 
+        </div>
+      
+    </div> 
+    <div class="second-container">
+        <div class="another-box">
+            <img src="\static\images\best.jpg" alt="" class="image">
+            
+        </div>
+        <div class="new-box">
+            <h4><span>Unrivalled</span> Customer Experience</h4>
+            <p>Our highly dedicated team is committed to give the best experience either on call or in person,
+                we shall ensure our cleints have the best customer relations at all times.</p>
+
+        </div>
+    </div>
+
+    <div class="third-container">
+        <div class="image-box">
+            <img src="static\images\more groceries.jpg" alt="" class="image">
+
+        </div>
+
+        <div class="word-box">
+            <h4><span>Distribution</span></h4>
+            <p>We have an enhanced medical delivery solution that enables us handle distribution of medicines,
+                laboratory specimens and any medical related material from hospitals, clinics and to and from patient’s homes to health facilities.</p>
+
+        </div>
+    </div>
+
+</section>
+{% include 'footer.html' %}
+    
+{% endblock body %}

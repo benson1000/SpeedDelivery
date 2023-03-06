@@ -1,0 +1,114 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/contact.css')}}">
+</head>
+
+{% extends 'base.html' %}
+{% block title %} Contact {% endblock title %}
+
+
+{% block body %}
+{% include 'header.html' %}
+
+<section="contact" id="contact">
+
+    <div class="contact-container">
+        <h2>Contact us, send your parcel and get it delivered within 24 hours</h2>
+    </div>
+
+    <div clas="collective-stuff">
+
+
+        <div class="other-stuff-here">
+
+            <div class="contact-box-bottom">
+
+                <div class="item-1">
+                    <i class='fas fa-building' style='font-size: 28px'> </i>
+                    <h3>Our Offices</h3>
+                    <link rel="stylesheet" href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+                    <p>We are located Kingshighway St,Cape Girardeau,
+                        Collett Dr, St.Louis, MO.</p>
+                </div>
+
+                <div class="item-2">
+                    <i class='fa fa-phone' style='font-size: 28px; color: black'> </i>
+                    <h3>Call us</h3>
+                    <p>
+                        phone: +13148575270,<br>
+                        Cell: +13148575270.
+                        <link rel="stylesheet" href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+                    </p>
+                </div>
+                
+                <div class="item-3">
+                    <i class='fas fa-envelope' style='font-size: 28px'> </i>
+                    <h3>Email us</h3>
+                    <link rel="stylesheet" href="{{ url_for('static', filename='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
+                    <p>
+                        info@panasonicspeed.com
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="contact-form-box" style="None">
+
+                    <form class="contact-details">
+                        <div class="firstname">
+                            <label for="validationServer01" class="form-label">Full Name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Name" required>
+                        </div>
+
+                        <div class="email">
+                            <label for="validationServerUsername" class="form-label">Email</label>
+                            <div class="input-group">
+                              <!-- <span class="input-group-text" id="inputGroupPrepend3">@</span> -->
+                              <input type="email" class="form-control is-valid" id="validationServerEmail" aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" placeholder="abc@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="phone-number">
+                            <label for="validationServer02" class="form-label">Phone</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Phone" required>
+                        </div>
+
+                        <div class="address">
+                            <label for="validationServer02" class="form-label">Address</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Your Address" required>
+                        </div>
+
+                        <label for="freeform">Tell us about your requirements</label>
+                          <br>
+                          <textarea id="freeform" name="freeform" rows="4" cols="50">
+                        </textarea><br><br>
+
+                        <div class="submit-btn">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="get-help-box">
+                    <h3>We are ready to help</h3>
+
+                    <p>At Panasonic Speed Logistics Ltd. we are<br>
+                        ready to help, complete the form below to<br>
+                        ask about our services, get a quick feedback.
+                    </p>
+
+                    <img src="static\images\call services.jpg" alt="" class="image">
+
+                </div>
+
+        </div>
+
+
+</div>
+
+</section>
+{% include 'footer.html' %}
+    
+{% endblock body %}
+

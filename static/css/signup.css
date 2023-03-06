@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    text-transform: lowercase;
+}
+
+#signup-form {
+  position: absolute;
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 80px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  left: 50%;
+  top: 75%;
+
+  transform: translate(-50%, -50%);
+}
+
+label, input, button {
+  display: inline; /* was block before */
+  width: 200px;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  position: relative;
+  padding: 10px;
+  margin-top: 17px;
+  margin: auto;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  text-transform: lowercase;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #1DA1F2;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+  transform: transition .4s ease;
+}
+
+input:hover {
+    position: relative;
+    width: 242px;
+    transform: transition .4s ease-out;
+}
+
+input:focus {
+    margin: auto;
+    width: 20%;
+    transform: transition .4s ease;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.password-container{
+    width: 200px;
+    position: relative;
+}
+
+.password-container input[type='password'],
+.password-container input[type='text']{
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+
+.password-container input[type='password']:hover,
+.password-container input[type='text']:hover{
+    position: relative;
+    width: 242px;
+    transform: transition .4s ease-out;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+    color: gray;
+}

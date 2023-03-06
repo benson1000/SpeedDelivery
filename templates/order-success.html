@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a53f968ed6.js" crossorigin="anonymous"></script>
+        <style>
+            .main{
+                width: 50%;
+                height: auto;
+                margin: auto;
+                margin-top: 30%;
+                box-shadow: rgba(30, 105, 20, 0.24) 0px 3px 8px;
+                background-color: rgb(243, 243, 243);
+                text-align: center;
+                padding: 80px 60px;
+                font-family: 'Roboto', sans-serif;
+            }
+            i{
+                font-size: 40px;
+                color: #0AAD0A;
+            }
+            h1{
+                color: #0AAD0A;
+            }
+            a{
+                text-decoration: none;
+                font-size: 25px;
+                background-color: #0AAD0A;
+                color: rgb(243, 243, 243);
+                font-weight: 500;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            a:hover{
+                background-color: #178117;
+            }
+            .p2{
+                margin-bottom: 50px;
+            }
+            @media only screen and (min-width: 10px) and (max-width: 510px){
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    background-color: #0AAD0A;
+                    color: rgb(243, 243, 243);
+                    font-weight: 500;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            
+                }
+        </style>
+    </head>
+    <body>
+        <nav class="d-flex justify-content-end align-items-center col-12">
+            <div class="d-flex col-4 justify-content-around">
+                <a href="{{url_for('account')}}" class="btn btn-primary">Account</a>
+                <a href="{{url_for('show')}}" class="btn btn-primary">My Orders</a>
+                <a href="/logout" class="btn btn-info">Logout</a>
+            </div>
+        </nav>
+    
+        <div id="main">
+            <i class="fa-solid fa-circle-check"></i>
+            <h1>Order confirmed</h1>
+            <p> Order id: {{order_id}}</p>
+            <p class="p2">Your order is confirmed. We will ship your order. <br>You will receive an order confirmation Email/SMS shortly with the expected time of delivery once we ship your order. <br>Thank you.</p>
+            <a href="{{url_for('new_delivery')}}">Continue Ordering more goods for delivery.</a>
+        </div>
+    </body>
+</html>

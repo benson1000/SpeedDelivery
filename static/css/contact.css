@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-container {
+    color: #fe4164;
+    margin: 20px;
+}
+
+.contact-container>h2 {
+    color: #130f40;
+    margin: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.other-stuff-here {
+    margin: 50px;
+    display: flex;
+}
+
+.form-container-form .contact-box {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.other-stuff-here .contact-form-box {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    border: none;
+    width: 450px;
+    height: 500px;
+    padding-right: 30px;
+}
+
+.other-stuff-here .get-help-box {
+    margin-left: 90px;
+    align-items: right;
+}
+
+.other-stuff-here .get-help-box h3 {
+    padding: 10px;
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}
+
+.other-stuff-here .get-help-box p {
+    border-radius: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #130f40;
+    font-weight: bold;
+}
+
+.other-stuff-here .get-help-box img {
+    border-radius: 50px;
+    padding-top: 15px;
+    width: 400px;
+}
+
+.contact-form-box .contact-details {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 450px;
+    height: 500px;
+    padding-right: 30px;
+}
+
+.contact-form-box .contact-details input:hover {
+    transform: scale(1.09);
+}
+
+.contact-form-box .contact-details input:focus {
+    transform: scale(1.09);
+}
+
+.contact-form-box .contact-details input {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    padding-top: 8px;
+    padding-top: 10px;
+    /* width: 100%; */
+    font-size: 14px;
+    font-weight: 600;
+    width: 230px;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+}
+
+#freeform {
+    position: relative;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid blue;
+    width: 80%;
+    margin: 10px;
+}
+
+.contact-form-box .contact-details label {
+    color: black;
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-form-box .contact-details label:after {
+    content: ": "
+}
+
+.get-help-box>p {
+    color: black;
+}
+
+.contact-box-bottom {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.contact-box-bottom h3 {
+    color: blue;
+    font-size: 25px;
+}
+
+.item-1 {
+    margin: 40px;
+}
+
+.item-1>p {
+    margin-top: 10px;
+}
+
+.item-2 {
+    margin: 40px;
+}
+
+.item-2>p {
+    margin-top: 10px;
+}
+
+.item-3 {
+    margin: 40px;
+}
+
+.item-3>p {
+    margin-top: 10px;
+}
